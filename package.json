@@ -1,0 +1,35 @@
+{
+  "name": "xcodejs",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/screenplaydev/xcodejs",
+  "license": "None",
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "child_process": "^1.0.2",
+    "fs-extra": "^9.0.1",
+    "handlebars": "^4.7.6",
+    "ncp": "^2.0.0",
+    "tmp": "^0.2.1",
+    "uuid": "^8.3.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/fs-extra": "^9.0.1",
+    "@types/ncp": "^2.0.4",
+    "@types/tmp": "^0.2.0",
+    "@types/uuid": "^8.0.0",
+    "@types/xml-js": "^1.0.0",
+    "@types/yargs": "^15.0.5",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc",
+    "prepublishOnly": "yarn build"
+  }
+}
